@@ -21,4 +21,4 @@ jobs:
         run: dotnet pack src/Serilog.Sinks.MementoGroup/Serilog.Sinks.MementoGroup.csproj -c Release -p:PackageVersion=${{ env.package_version }} -o nupkgs
       
       - name: Push to NuGet
-        run: dotnet nuget push "nupkgs/Serilog.Sinks.MementoGroup.${{ env.package_version }}.nupkg" --source "nuget" --api-key ${{ secrets.NUGET_WRITE_TOKEN }}
+        run: dotnet nuget push "nupkgs/Serilog.Sinks.MementoGroup.${{ env.package_version }}.nupkg" --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_WRITE_TOKEN }}
