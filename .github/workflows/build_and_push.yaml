@@ -2,8 +2,7 @@ name: Build and push
 
 on:
   push:
-    branches:
-      - master
+    tags: [ 'v*.*.*' ]
 
 jobs:
   buildAndPush:
@@ -22,7 +21,7 @@ jobs:
           dotnet-version: 8.x
 
       - name: Set package version
-        run: echo "package_version=0.0.${{ github.run_number }}.${{ github.run_attempt }}" >> $GITHUB_ENV
+        run: echo "package_version=${{ github.ref_name }}" >> $GITHUB_ENV
         
       - name: Build package
         run: dotnet pack src/Serilog.Sinks.MementoGroup/Serilog.Sinks.MementoGroup.csproj -c Release -p:PackageVersion=${{ env.package_version }} -o nupkgs

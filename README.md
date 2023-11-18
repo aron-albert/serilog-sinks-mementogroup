@@ -1,4 +1,4 @@
-# Serilog.Sinks.MementoGroup [![Build](https://github.com/aron-albert/serilog-sinks-mementogroup/actions/workflows/build_and_push.yaml/badge.svg?branch=master)](https://github.com/aron-albert/serilog-sinks-mementogroup/actions/workflows/build_and_push.yaml)[![Tests](https://github.com/aron-albert/serilog-sinks-mementogroup/actions/workflows/run_tests.yaml/badge.svg?branch=master)](https://github.com/aron-albert/serilog-sinks-mementogroup/actions/workflows/run_tests.yaml)
+# Serilog.Sinks.MementoGroup [![Build](https://github.com/aron-albert/serilog-sinks-mementogroup/actions/workflows/build_and_push.yaml/badge.svg?branch=master)](https://github.com/aron-albert/serilog-sinks-mementogroup/actions/workflows/build_and_push.yaml) [![Tests](https://github.com/aron-albert/serilog-sinks-mementogroup/actions/workflows/run_tests.yaml/badge.svg?branch=master)](https://github.com/aron-albert/serilog-sinks-mementogroup/actions/workflows/run_tests.yaml)
 
 If you have ever struggled to find the balance between verbose enough logging and keeping the amount of log entries at minimum, this package can probably help you in that.
 
