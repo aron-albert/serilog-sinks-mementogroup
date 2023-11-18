@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Serilog.MementoGroup\Serilog.MementoGroup.csproj" />
+    <ProjectReference Include="..\..\src\Serilog.Sinks.MementoGroup\Serilog.Sinks.MementoGroup.csproj" />
   </ItemGroup>
 
 </Project>

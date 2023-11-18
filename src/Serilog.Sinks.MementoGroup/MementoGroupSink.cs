@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Serilog.MementoGroup
+namespace Serilog.Sinks.MementoGroup
 {
     internal class MementoGroupSink : ILogEventSink, IDisposable
     {

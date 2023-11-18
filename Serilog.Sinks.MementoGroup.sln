@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.MementoGroup", "src\Serilog.MementoGroup\Serilog.MementoGroup.csproj", "{903DC020-A245-41EF-BB6D-EE49BF7C1B4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.MementoGroup", "src\Serilog.Sinks.MementoGroup\Serilog.Sinks.MementoGroup.csproj", "{903DC020-A245-41EF-BB6D-EE49BF7C1B4A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{75450B4C-6F6C-4055-95C0-1BE2699CF8C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleWebApplication", "examples\ExampleWebApplication\ExampleWebApplication.csproj", "{8F723E8F-87F2-4C76-9D9E-EE2C5D30313C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleWebApplication", "examples\ExampleWebApplication\ExampleWebApplication.csproj", "{8F723E8F-87F2-4C76-9D9E-EE2C5D30313C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.MementoGroup.Tests", "test\Serilog.Sinks.MementoGroup.Tests\Serilog.Sinks.MementoGroup.Tests.csproj", "{070AFAB8-9D9C-402D-849C-162FBCBD78DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +21,14 @@ Global
 		{903DC020-A245-41EF-BB6D-EE49BF7C1B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{903DC020-A245-41EF-BB6D-EE49BF7C1B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{903DC020-A245-41EF-BB6D-EE49BF7C1B4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{830573D4-9373-47F2-92CC-B6665C5B46FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{830573D4-9373-47F2-92CC-B6665C5B46FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{830573D4-9373-47F2-92CC-B6665C5B46FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{830573D4-9373-47F2-92CC-B6665C5B46FA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8F723E8F-87F2-4C76-9D9E-EE2C5D30313C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F723E8F-87F2-4C76-9D9E-EE2C5D30313C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F723E8F-87F2-4C76-9D9E-EE2C5D30313C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F723E8F-87F2-4C76-9D9E-EE2C5D30313C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{070AFAB8-9D9C-402D-849C-162FBCBD78DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070AFAB8-9D9C-402D-849C-162FBCBD78DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070AFAB8-9D9C-402D-849C-162FBCBD78DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070AFAB8-9D9C-402D-849C-162FBCBD78DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

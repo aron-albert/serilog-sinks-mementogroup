@@ -1,7 +1,7 @@
 ﻿using Serilog.Configuration;
 using Serilog.Debugging;
 using Serilog.Events;
-using Serilog.MementoGroup;
+using Serilog.Sinks.MementoGroup;
 using System;
 
 namespace Serilog
