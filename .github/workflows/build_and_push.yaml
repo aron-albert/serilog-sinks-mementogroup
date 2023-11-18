@@ -21,7 +21,7 @@ jobs:
           dotnet-version: 8.x
 
       - name: Set package version
-        run: echo "package_version=${{ github.ref_name }}" >> $GITHUB_ENV
+        run: echo "package_version=${{ github.ref_name:1:5 }}" >> $GITHUB_ENV
         
       - name: Build package
         run: dotnet pack src/Serilog.Sinks.MementoGroup/Serilog.Sinks.MementoGroup.csproj -c Release -p:PackageVersion=${{ env.package_version }} -o nupkgs
