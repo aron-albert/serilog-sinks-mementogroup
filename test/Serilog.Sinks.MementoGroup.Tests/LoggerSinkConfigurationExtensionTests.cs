@@ -23,14 +23,14 @@ public class LoggerSinkConfigurationExtensionTests
             .CreateLogger();
 
         var sinkFi = logger.GetType().GetField("_sink", BindingFlags.Instance | BindingFlags.NonPublic);
-        var sink = sinkFi.GetValue(logger);
-        var sinksFi = sink.GetType().GetField("_sinks", BindingFlags.Instance | BindingFlags.NonPublic);
-        var sinks = sinksFi.GetValue(sink) as ILogEventSink[];
-        var mementoSink = sinks[0];
+        var sink = sinkFi!.GetValue(logger);
+        var sinksFi = sink!.GetType().GetField("_sinks", BindingFlags.Instance | BindingFlags.NonPublic);
+        var sinks = sinksFi!.GetValue(sink) as ILogEventSink[];
+        var mementoSink = sinks![0];
         var targetLoggerFi = mementoSink.GetType().GetField("_logger", BindingFlags.Instance | BindingFlags.NonPublic);
-        var targetLogger = targetLoggerFi.GetValue(mementoSink);
-        var minLevelFi = targetLogger.GetType().GetField("_minimumLevel", BindingFlags.Instance | BindingFlags.NonPublic);
-        var minimumLevel = minLevelFi.GetValue(targetLogger);
+        var targetLogger = targetLoggerFi!.GetValue(mementoSink);
+        var minLevelFi = targetLogger!.GetType().GetField("_minimumLevel", BindingFlags.Instance | BindingFlags.NonPublic);
+        var minimumLevel = minLevelFi!.GetValue(targetLogger);
 
         minimumLevel.Should().Be(level);
     }

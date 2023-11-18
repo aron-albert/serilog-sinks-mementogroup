@@ -9,7 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{75
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleWebApplication", "examples\ExampleWebApplication\ExampleWebApplication.csproj", "{8F723E8F-87F2-4C76-9D9E-EE2C5D30313C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.MementoGroup.Tests", "test\Serilog.Sinks.MementoGroup.Tests\Serilog.Sinks.MementoGroup.Tests.csproj", "{070AFAB8-9D9C-402D-849C-162FBCBD78DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.MementoGroup.Tests", "test\Serilog.Sinks.MementoGroup.Tests\Serilog.Sinks.MementoGroup.Tests.csproj", "{070AFAB8-9D9C-402D-849C-162FBCBD78DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0938DDFD-0E33-4F87-AB95-4C79FF11D66A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
