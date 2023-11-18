@@ -4,7 +4,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Threading;
 
-namespace Serilog.MementoGroup
+namespace Serilog.Sinks.MementoGroup
 {
     internal class LogEntryBuffer
     {
