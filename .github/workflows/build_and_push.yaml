@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  buildAndPush:
+    name: Build and push to NuGet
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+      - name: Set package version
+        run: echo "package_version=0.0.${{ github.run_number }}.${{ github.run_attempt }}" >> $GITHUB_ENV
+        
+      - name: Build package
+        run: dotnet pack src/Serilog.Sinks.MementoGroup/Serilog.Sinks.MementoGroup.csproj -c Release -p:PackageVersion=${{ env.package_version }} -o nupkgs
+      
+      - name: Push to NuGet
+        run: dotnet nuget push "nupkgs/Serilog.Sinks.MementoGroup.${{ env.package_version }}.nupkg" --source "nuget" --api-key ${{ secrets.NUGET_WRITE_TOKEN }}

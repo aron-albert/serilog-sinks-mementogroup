@@ -12,7 +12,7 @@ namespace Serilog.Sinks.MementoGroup
         private readonly LogEventLevel _passthroughLevel;
         private readonly LogEventLevel _triggerLevel;
         private readonly LogEventLevel _minimumLevel;
-        private ConcurrentQueue<LogEvent>? _logEventsQueue;
+        private ConcurrentQueue<LogEvent> _logEventsQueue;
         private DateTimeOffset _lastMessageDateTime;
 
         public LogEntryBuffer(string key, Logger logger, LogEventLevel passthroughLevel, LogEventLevel triggerLevel, LogEventLevel minimumLevel)
