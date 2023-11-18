@@ -1,0 +1,1 @@
+# MementoGroup Sink for Serilog
